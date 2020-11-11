@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Brawl Stars</title>
+</head>
+
+<body>
+    <section class="screen" id="init-scrn">
+        <div class="introText">
+            <img id="headPic" src="img/inicio.png" />
+            <p class="rule" onclick="game.nextStage()">START</p>
+        </div>
+    </section>
+
+    <section class="screen screenOff" id="loading-scrn">
+        <div div class="introText">
+            <h1>ELIGIR A VUESTROS PERSONAJES...</h1>
+        </div>
+    </section>
+
+    <section class="screen screenOff" id="choose-scrn">
+        <div class="introText" id="chooseText">Personaje 1, elige...</div>
+        <div id="fighters" class="luchadores"></div>
+    </section>
+
+    <section class="screen screenOff" id="fight-scrn">
+        <div class="teams">
+            <h3>Jugador 1</h3>
+            <h3 class="life" id="lifeP1"></h3>
+            <div id="chossedPlayer1"></div>
+            <div id="fight">
+                <button class="fightBttn" onclick="game.fight()">Fight!</button>
+            </div>
+            <h3>Jugador 2</h3>
+            <h3 class="life" id="lifeP2"></h3>
+            <div id="chossedPlayer2"></div>
+        </div>
+    </section>
+
+    <section class="screen screenOff" id="win-scrn">
+        <div id="final">
+            <h1 id="mssgPlayerWin"></h1>
+            <h3 id="finalMssg" onclick="game.reset()">Volver a jugar...</h3>
+        </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
