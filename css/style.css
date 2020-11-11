@@ -1,0 +1,34 @@
+.screen{
+    background-color: chocolate;
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    position: fixed;
+    top:0;
+    left:0;
+
+}
+.screenOn{
+    visibility: visible;
+}
+.screenOff{
+    visibility: hidden;
+}
+
+ul{
+    list-style:none;
+}
+li > p{
+    color: white;
+}
+body{
+    font-family: "FightClub";
+    color:white;
+}
+.introText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
