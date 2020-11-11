@@ -32,3 +32,41 @@ body{
     align-items: center;
     font-size: xx-large;
 }
+/*PLAYERS*/
+.luchadores{
+    display:Flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.luchador{
+    padding: 6%;
+    height: 9em;
+}
+
+/*CAMBIO DE COLOR*/
+.disable{
+    filter:grayscale(100%);
+}
+
+
+.teams{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-block-end: 5em;
+    padding: 5%; 
+    position: relative;
+}
+#chossedPlayer2{
+    align-self: flex-end;
+}
+.teams>h3{
+    align-self: flex-start;
+    padding: 1%;
+}
+.life{
+    color:white;
+}
